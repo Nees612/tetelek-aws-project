@@ -32,6 +32,8 @@ export async function Login(email: string, password:string){
 
 export async function GetLogin(UserID: number) {
 
+   console.log(UserID);
+
     CurrentUserData = {UserID: 123, UserName: "TestUser", UserToken: "TestTokenValid-X-AmoutTime"};
     return CurrentUserData;
 
@@ -42,6 +44,8 @@ export async function GetLogin(UserID: number) {
 }
 
 export async function Register(name: string, email: string, password:string){
+
+   console.log(email,name,password);
 
     return {BackEndResponseStatus: 200, UserID: 123};
 

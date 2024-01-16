@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "../api_interface/UserInterface";
 import { FormEvent } from "react";
-import { GetLogin, Login, Register } from "../api_interface/UserInterface";
+import { GetLogin, Register } from "../api_interface/UserInterface";
 import { NavLink } from "react-router-dom";
 
 //Todo PasswordHash
@@ -22,7 +22,7 @@ function RegisterComponent() {
     }
 
     return <>
-        <form onSubmit={HandleSubmit} className="p-3 m-3" style={{height: "calc(100vh - 9rem)"}}>
+        <form onSubmit={HandleSubmit} className="p-3 m-3" style={{height: "calc(100vh - 6rem)"}}>
             <div className="row justify-content-center w-100">                
                 <div className="col-4">
                 <h1>Sign Up!</h1>
